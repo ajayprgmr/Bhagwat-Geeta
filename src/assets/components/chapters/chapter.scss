@@ -1,0 +1,57 @@
+// <div className='chapter-container'>
+//       {/* {chapters.map((chapter) => {
+//         return (
+//           <div className='chapter' key={chapter.chapter_number}>
+//             <h6>{`Chapter : ${chapter.chapter_number}`}</h6>
+//             <h6>{`${chapter.name} [ ${chapter.transliteration} ]`}</h6>
+//             <h6>{`Total Verses : ${chapter.verses_count}`}</h6>
+//             <p>{chapter.summary.en}</p>
+//           </div>
+//         )
+//       })} */}
+
+.chapter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  border: solid 2px green;
+  gap: 10px;
+
+  .chapter {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: solid 1px rgb(17, 25, 185);
+    width: 350px;
+    height: fit-content;
+
+    h6 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.8rem;
+      text-align: justify;
+    }
+    .summary {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        text-decoration: underline;
+      }
+    }
+
+    &:hover {
+      background-color: aliceblue;
+    }
+  }
+}
+.info-btn {
+  height: fit-content;
+  font-size: 10px;
+  text-decoration: none;
+  border: none;
+  color: green;
+  background-color: white;
+}
