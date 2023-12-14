@@ -68,7 +68,7 @@ function Chapter() {
           )
         })
       ) : (
-        <p>Loading...</p>
+        <p className='loading'>Loading...</p>
       )}
     </div>
   )

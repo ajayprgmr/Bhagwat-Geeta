@@ -46,6 +46,12 @@
       background-color: aliceblue;
     }
   }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 }
 .info-btn {
   height: fit-content;
